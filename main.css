@@ -5,19 +5,26 @@
 }
 
 .window-pane {
-    height: 20px;
-    width: 15px;
+    height: 35px;
+    width: 25px;
     border: 1px solid black;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+
 }
 
 .darkgoldenrod {
-    color: darkgoldenrod;
+    background-color: darkgoldenrod;
+    color: white;
 }
 
 .darkcyan {
-    color: darkcyan;
+    background-color: darkcyan;
+    color: white;
 }
 
 .darkblue {
-    color: darkblue;
+    background-color: darkblue;
+    color: white;
 }
