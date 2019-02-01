@@ -1,0 +1,23 @@
+#canvas {
+    height: 250px;
+    width: 350px;
+    border: 1px solid aquamarine;
+}
+
+.window-pane {
+    height: 20px;
+    width: 15px;
+    border: 1px solid black;
+}
+
+.darkgoldenrod {
+    color: darkgoldenrod;
+}
+
+.darkcyan {
+    color: darkcyan;
+}
+
+.darkblue {
+    color: darkblue;
+}
