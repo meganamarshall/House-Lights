@@ -11,7 +11,7 @@ const windows = [
 for(let index = 0; index < windows.length; index++) {
     let window = windows[index];
     const windowButtonNode = document.createElement('button');
-    windowButtonNode.textContent = window;
+    windowButtonNode.textContent = 'window!';
     windowButtonNode.value = window;
     windowButtonNode.classList.add('window-button', window);
 
@@ -19,7 +19,7 @@ for(let index = 0; index < windows.length; index++) {
         // make a variable that equals the length of the string
         // make a loop that limits the length to 8
         const windowQuantity = document.querySelectorAll('.window-pane').length;
-        if(windowQuantity < 8) {
+        if(windowQuantity < 10) {
             paint(window);
         }
         console.log(window);
@@ -40,7 +40,7 @@ function paint(window) {
 for(let index = 0; index < windows.length; index++) {
     let window = windows[index];
     const transformButtonNode = document.createElement('button');
-    transformButtonNode.textContent = window;
+    transformButtonNode.textContent = 'light!';
     transformButtonNode.value = window;
     transformButtonNode.classList.add('light-button', window);
 
