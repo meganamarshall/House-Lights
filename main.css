@@ -1,7 +1,8 @@
 #canvas {
     height: 250px;
-    width: 350px;
-    border: 1px solid aquamarine;
+    width: 225px;
+    border: 3px solid darkcyan;
+    background-image: linear-gradient(to top, darkblue) url('../assets/house outline.png');
 }
 
 .window-pane {
@@ -31,4 +32,14 @@
 
 .new-color {
     background-color: lightgoldenrodyellow;
+}
+
+img {
+    height: 245px;
+    z-index: 0;
+}
+
+button {
+    padding: 10px;
+    margin-bottom: 10px;
 }
