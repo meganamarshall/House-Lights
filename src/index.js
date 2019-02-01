@@ -1,6 +1,6 @@
 const windowButtonsNode = document.getElementById('window-buttons');
 const canvasNode = document.getElementById('canvas');
-const transformButtonsNode = document.getElementById('transform-buttons');
+const transformButtonsNode = document.getElementById('light-buttons');
 
 const windows = [
     'darkblue',
@@ -38,11 +38,11 @@ function paint(window) {
 }
 
 for(let index = 0; index < windows.length; index++) {
-    let light = windows[index];
+    let window = windows[index];
     const transformButtonNode = document.createElement('button');
-    transformButtonNode.textContent = light;
-    transformButtonNode.value = light;
-    transformButtonNode.classList.add('transform-button', light);
+    transformButtonNode.textContent = window;
+    transformButtonNode.value = window;
+    transformButtonNode.classList.add('light-button', window);
 
     transformButtonNode.addEventListener('click', function() {
         transform(window);
@@ -51,3 +51,11 @@ for(let index = 0; index < windows.length; index++) {
     console.log(transformButtonNode);
 }
 
+function transform(window) {
+    const selector = '.window-pane.' + window;
+    const windowPanes = document.querySelectorAll(selector);
+
+    for(let index = 0; index < windowPanes.length; index++) {
+        windowPanes[index].classList.add('new-color');
+    }
+}
