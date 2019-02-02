@@ -49,10 +49,6 @@ body {
     color: white;
 }
 
-.new-color {
-    background-color: lightgoldenrodyellow;
-}
-
 img {
     height: 245px;
     z-index: 0;
@@ -64,6 +60,10 @@ button {
     font-family: 'benthamregular';
     font-size: 20px;
     border-radius: 10px;
+}
+
+.new-color {
+    background-color: lightgoldenrodyellow;
 }
 
 footer {

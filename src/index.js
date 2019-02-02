@@ -16,15 +16,12 @@ for(let index = 0; index < windows.length; index++) {
     windowButtonNode.classList.add('window-button', window);
 
     windowButtonNode.addEventListener('click', function() {
-        // make a variable that equals the length of the string
-        // make a loop that limits the length to 8
         const windowQuantity = document.querySelectorAll('.window-pane').length;
         if(windowQuantity < 10) {
             paint(window);
         }
-        console.log(window);
-    });
 
+    });
     windowButtonsNode.appendChild(windowButtonNode);
     console.log(windowButtonNode);
 }
@@ -33,8 +30,7 @@ function paint(window) {
     // add windowpane to span in html
     const windowPane = document.createElement('span');
     windowPane.classList.add('window-pane', window);
-    canvasNode.appendChild(windowPane);
-    
+    canvasNode.appendChild(windowPane); 
 }
 
 for(let index = 0; index < windows.length; index++) {
@@ -47,8 +43,9 @@ for(let index = 0; index < windows.length; index++) {
     transformButtonNode.addEventListener('click', function() {
         transform(window);
     });
+
     transformButtonsNode.appendChild(transformButtonNode);
-    console.log(transformButtonNode);
+    console.log(transformButtonsNode);
 }
 
 function transform(window) {
